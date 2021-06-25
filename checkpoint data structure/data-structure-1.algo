@@ -1,0 +1,26 @@
+ALGORITHM DataStructure1
+VAR
+    tab1 : ARRAY_OF INTEGER ;
+    tab2 : ARRAY_OF INTEGER ;
+    i,j,sum,n,m : INTEGER;
+BEGIN
+    sum:=0;
+    n:=tab1.length;
+    m:=tab2.length;
+    FOR i FROM 0 TO n-1 STEP 1  DO
+
+       FOR j FROM 0 TO m-1 STEP 1 DO
+          IF (tab1[i])= tab2[j]) THEN
+            tab1[i]:=0;
+            tab2[j]:=0;
+          END_if
+        END_FOR
+        sum:= sum+tab1[i];
+    END_FOR
+
+    FOR j FROM 0 TO m-1 STEP 1 DO
+      sum:=sum+tab2[j];
+    END_FOR
+    
+    writeln(sum);
+END
