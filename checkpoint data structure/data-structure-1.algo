@@ -22,5 +22,5 @@ BEGIN
       sum:=sum+tab2[j];
     END_FOR
     
-    writeln(sum);
+    writeln(sum)
 END
