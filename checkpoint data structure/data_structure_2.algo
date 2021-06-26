@@ -1,7 +1,7 @@
 ALGORITHM DataStructure2
 VAR
   htab: HASH_TABLE<INTEGER,INTEGER>
-  set1,set2:array_of : ARRAY_OF integer;
+  set1,set2:array_of : ARRAY_OF INTEGER;
   sum,i,j : integer;
 BEGIN
   sum:=0;
